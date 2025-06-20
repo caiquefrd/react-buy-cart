@@ -42,7 +42,7 @@ src/
 ```bash
 git clone https://github.com/caiquefrd/react-buy-cart.git
 
-cd carrinho-react
+cd react-buy-cart
 
 npm install
 
