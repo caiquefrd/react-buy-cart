@@ -6,19 +6,19 @@ const CartPage = () => {
 
   return (
     <div className='section'>
-      <h2>Cart</h2>
+      <h2>Carrinho</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p>Seu carrinho está vazio.</p>
       ) : (
         <div>
           {cartItems.map(item => (
             <div key={item.id} className='cart-item'>
-              <span>{item.name} - ${item.price} x {item.quantity}</span>
+              <span>{item.name} - R${item.price.toFixed(2)} x {item.quantity}</span>
               <button onClick={() => increment(item.id)}>+</button>
               <button onClick={() => decrement(item.id)}>-</button>
             </div>
           ))}
-          <h3>Total: ${cartTotal.toFixed(2)}</h3>
+          <h3>Total: R${cartTotal.toFixed(2)}</h3>
         </div>
       )}
     </div>
