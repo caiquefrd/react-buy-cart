@@ -40,7 +40,7 @@ src/
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/caiquefrd/react-buy-cart.git
+git clone https://github.com/caiquefrd/react-buy-cart.git
 
 cd carrinho-react
 
