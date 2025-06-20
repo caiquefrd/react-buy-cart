@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🛒 Carrinho de Compras com React Context
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto simples de e-commerce desenvolvido em **React**, utilizando **React Context** e **useReducer** para gerenciar globalmente o estado do carrinho de compras.
 
-## Available Scripts
+## 🎯 Objetivo
 
-In the project directory, you can run:
+Demonstrar como criar uma aplicação com gerenciamento de estado global usando Context API, permitindo que qualquer componente da árvore acesse e modifique o estado do carrinho, sem o uso de props.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ Listagem de produtos estáticos
+- ✅ Adição de produtos ao carrinho
+- ✅ Remoção e ajuste de quantidade
+- ✅ Visualização do resumo do carrinho
+- ✅ Cálculo automático do total
+- ✅ Mensagens de feedback ao adicionar
+- ✅ Persistência dos dados no `localStorage`
+- ✅ Interface responsiva com **tema escuro**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧱 Estrutura de Componentes
+src/
+├── components/
+│ ├── CartPage.js
+│ ├── CartSummary.js
+│ └── ProductList.js
+├── context/
+│ └── CartContext.js
+├── App.js
+├── index.css
+└── index.js
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o repositório:**
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
-### `npm run eject`
+cd carrinho-react
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
+```
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Tecnologias Usadas
+React
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React Context API
 
-## Learn More
+useReducer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+JavaScript (ES6+)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+CSS Puro (Tema Escuro)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Melhorias Futuras
+Integração com API externa para produtos
 
-### Analyzing the Bundle Size
+Autenticação de usuários
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Finalização de compra e histórico
 
-### Making a Progressive Web App
+Estilização com Tailwind ou Material UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 👨‍💻 Autor
+Desenvolvido por [caiquefrd] — @caiquefrd
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
